@@ -1,14 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video – Watch TV Shows Online, Watch Movies Online</title>
     <link rel="stylesheet" href="./css/index.css">
-    <title>Prime Video</title>
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/login-modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
-    <h1>Prime Video</h1>
-    
+    <div class="main">
+        <nav>
+            <span><img width="53" src="https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png"
+                    alt=""></span>
+            <div class="nav-items">
+                <span><a href="#">Home</a></span>
+                <span><a href="#">Movies</a></span>
+                <span><a href="#">Web Series</a></span>
+                <span><a href="#">Live TV</a></span>
+            </div>
+            <div>
+                <button class="btn" id="lang">Hn/En</button>
+                <button class="btn btn-red-sm" id="signInBtn">Sign In</button>
+            </div>
+        </nav>
+
+        <div class="box">
+        </div>
+
+        <div class="heading">
+            <span>Enjoy big movies, hit series and more from ₹199.</span>
+            <span>Join today. Cancel anytime.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="hero-buttons">
+                <input class="email-space" type="text" placeholder="Email Address">
+                <button class="btn btn-red">Get Started &gt;</button>
+            </div>
+        </div>
+        <div class="separation"></div>
+        <div class="separation"></div>
+    </div>
+
+    <div id="signInModal" class="modal">
+        <span class="close">×</span>
+        <div class="form-wrapper">
+            <h2>Sign In</h2>
+            <form action="submit">
+                <div class="form-control">
+                    <input type="text" required>
+                    <label>Email or phone number</label>
+                </div>
+                <div class="form-control">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit">Sign In</button>
+                <div class="form-help"> 
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#">Need help?</a>
+                </div>
+            </form>
+            <p>New to Prime Video? <a href="#">Sign up now</a></p>
+            <small>
+                This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+                <a href="#">Learn more.</a>
+            </small>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <section class="home swiper mySwiper" id="home">
+            <div class="wrapper swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="./assets/images/slider/open.jpg" alt="" class="image">
+                    <div class="image-data">
+                        <h1 class="title">Oppenheimer</h1>
+                        <h2>IMDB - 9.3</h2>
+                        <div class="slide-btn">
+                            <button>Watch Now</button>
+                            <button>Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="./assets/images/slider/shershah.jpg" alt="" class="image">
+                    <div class="image-data">
+                        <h1 class="title">Shershah</h1>
+                        <h2>IMDB - 9.3</h2>
+                        <div class="slide-btn">
+                            <button>Watch Now</button>
+                            <button>Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="./assets/images/slider/dunki.jpg" alt="" class="image">
+                    <div class="image-data">
+                        <h1 class="title">Dunki</h1>
+                        <h2>IMDB - 9.3</h2>
+                        <div class="slide-btn">
+                            <button>Watch Now</button>
+                            <button>Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="./assets/images/slider/sanju.jpeg" alt="" class="image">
+                    <div class="image-data">
+                        <h1 class="title">Sanju</h1>
+                        <h2>IMDB - 9.3</h2>
+                        <div class="slide-btn">
+                            <button>Watch Now</button>
+                            <button>Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="./assets/images/slider/jawan.jpg" alt="" class="image">
+                    <div class="image-data">
+                        <h1 class="title">Jawan</h1>
+                        <h2>IMDB - 9.3</h2>
+                        <div class="slide-btn">
+                            <button>Watch Now</button>
+                            <button>Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="./assets/images/slider/ipf.jpg" alt="" class="image">
+                    <div class="image-data">
+                        <h1 class="title">Indian Police Force</h1>
+                        <h2>IMDB - 9.3</h2>
+                        <div class="slide-btn">
+                            <button>Watch Now</button>
+                            <button>Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </div>
+
+    <section class="recomend">
+        <h1 class="sec-title">Top IMDB Rated</h1>
+        <div class="top">
+            <div class="movie-icon">
+                <img src="./assets/images/top/12th-fail.jpg" alt="">
+                <h1 class="top-title">12th Fail</h1>
+            </div>
+            <div class="movie-icon">
+                <img src="./assets/images/top/dark-night.jpg" alt="">
+                <h1 class="top-title">The Dark Night</h1>
+            </div>
+            <div class="movie-icon">
+                <img src="./assets/images/top/incep.jpg" alt="">
+                <h1 class="top-title">Inception</h1>
+            </div>
+            <div class="movie-icon">
+                <img src="./assets/images/top/infinity.jpg" alt="">
+                <h1 class="top-title">Avengers : Infinity War</h1>
+            </div>
+            <div class="movie-icon">
+                <img src="./assets/images/top/inter.jpg" alt="">
+                <h1 class="top-title">Interstellar</h1>
+            </div>
+            <div class="movie-icon">
+                <img src="./assets/images/top/3idiots.jpeg" alt="">
+                <h1 class="top-title">3 Idiots</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="first">
+        <div>
+            <span>Enjoy on your TV</span>
+            <span>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+        </div>
+
+        <div class="secImg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <div class="separation"></div>
+    <section class="first third">
+        <div>
+            <span>Watch everywhere</span>
+            <span>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
+        </div>
+
+        <div class="secImg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <div class="separation"></div>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox">
+            <span>What is Prime Video?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>How much does Prime Video per month cost?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+        </div>
+        <div class="faqbox">
+            <span>What can I watch on Prime Video?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+        </div>
+        <div class="faqbox">
+            <span>Where can I watch?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <footer>
+        <span><img width="150px" src="https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png"
+                alt=""></span>
+        <div class="questions">
+            Questions? Call 000-800-919-1694
+        </div>
+        <div class="footer">
+            <div class="footer-item">
+                <a href="faq">Investor Relations</a>
+                <a href="faq">Jobs</a>
+                <a href="faq">Ways to Watch</a>
+                <a href="faq">Terms of Use</a>
+            </div>
+
+            <div class="footer-item">
+                <a href="faq">Help Centre</a>
+                <a href="faq">Account</a>
+                <a href="faq">Speed Test</a>
+                <a href="faq">Legal Notices</a>
+            </div>
+            <div class="footer-item">
+                <a href="faq">Media Centre</a>
+                <a href="faq">Privacy</a>
+                <a href="faq">Cookie Preferences</a>
+                <a href="faq">Corporate</a>
+            </div>
+
+            <div class="footer-item">
+                <a href="faq">Contact Us</a>
+                <a href="faq">FAQ</a>
+                <a href="faq">Legal Notices</a>
+                <a href="faq">Only on primeVideo</a>
+            </div>
+        </div>
+    </footer>
+    <p class="copyright">primevideo &copy; 2024, All rights reserved</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
